@@ -11,9 +11,16 @@
         <h1>Genesis 5 Number Test (NSO 2000 Translation)</h1>
         <p>Enter the number that belongs in the blank for each verse.</p>
 
-        <div id="quiz-area">
+        <div id="start-screen" class="screen">
+            <h2>Welcome!</h2>
+            <p>Please click 'Start Quiz' to begin and enable audio playback.</p>
+            <button id="start-button">Start Quiz</button>
+        </div>
+
+        <div id="quiz-area" class="screen" style="display: none;"> 
             <p id="verse-display"></p>
-            <audio id="audio-player" preload="auto"></audio> <p id="audio-status"></p>
+            <audio id="audio-player" preload="auto"></audio>
+            <p id="audio-status"></p>
 
             <div class="input-section">
                 <label for="user-input">Enter the number:</label>
@@ -23,7 +30,7 @@
             <p id="feedback"></p>
         </div>
 
-        <div id="results-area" style="display: none;">
+        <div id="results-area" class="screen" style="display: none;">
             <h2>Test Complete!</h2>
             <p>Correct Answers: <span id="correct-count">0</span> out of <span id="total-questions-count">0</span></p>
             <p>Percentage: <span id="percentage">0.00%</span></p>
