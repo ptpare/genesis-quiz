@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Genesis 5 Number Test (NSO 2000)</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Genesis 5 Number Test (NSO 2000 Translation)</h1>
+        <p>Enter the number that belongs in the blank for each verse.</p>
+
+        <div id="quiz-area">
+            <p id="verse-display"></p>
+            <audio id="audio-player" preload="auto"></audio> <p id="audio-status"></p>
+
+            <div class="input-section">
+                <label for="user-input">Enter the number:</label>
+                <input type="number" id="user-input" placeholder="Your answer">
+                <button id="submit-button">Submit</button>
+            </div>
+            <p id="feedback"></p>
+        </div>
+
+        <div id="results-area" style="display: none;">
+            <h2>Test Complete!</h2>
+            <p>Correct Answers: <span id="correct-count">0</span> out of <span id="total-questions-count">0</span></p>
+            <p>Percentage: <span id="percentage">0.00%</span></p>
+            <button id="restart-button">Restart Test</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
